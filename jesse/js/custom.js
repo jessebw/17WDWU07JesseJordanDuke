@@ -1,24 +1,24 @@
 /* iife */
 (function (){ 
 
-console.log('a');
+// console.log('a');
 
-function getTwitter(){
-	$.ajax({
-		url:"js/MOCK_DATA.json",
-		dataType:"json",
-		success:function(dataFromServer){
-			console.log('success');
+// function getTwitter(){
+// 	$.ajax({
+// 		url:"js/MOCK_DATA.json",
+// 		dataType:"json",
+// 		success:function(dataFromServer){
+// 			console.log('success');
 
-		},
-		error:function(errorFromJSON){
-			console.log(errorFromJSON);
-			alert("Cannot connect to server.");
-		}
-	})
-}
+// 		},
+// 		error:function(errorFromJSON){
+// 			console.log(errorFromJSON);
+// 			alert("Cannot connect to server.");
+// 		}
+// 	})
+// }
 
-getTwitter();
+// getTwitter();
 
 
 
