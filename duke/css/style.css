@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline|Questrial|Righteous');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline|Questrial|Press+Start+2P');
 
 * {
 	margin: 0 auto;
 	padding: 0;
-	text-transform: uppercase;
 }
 
 #wrapper {
@@ -20,6 +19,8 @@
 	background-color: black;
 	border-radius: 15px 15px 0px 0px;
 	text-align: center;
+	display: flex;
+	align-items: center;
 }
 
 #container {
@@ -49,6 +50,7 @@
 	padding: 10px 0px 10px 15px;
 	font-family: 'Questrial', sans-serif;
 	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 #infoContainer {
@@ -74,14 +76,15 @@
 	padding: 10px 0px 10px 0px;
 	font-family: 'Questrial', sans-serif;
 	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 h1 {
 	color: white;
-	font-family: 'Righteous', cursive;
-	font-size: 3.5em;
-	letter-spacing: 4px;
-	padding-top: .80em;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 2.5em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 h3 {
@@ -91,6 +94,7 @@ h3 {
 	font-family: 'Bungee Hairline', cursive;
 	letter-spacing: 4px;
 	color: white;
+	text-transform: uppercase;
 }
 
 h4 {
@@ -100,6 +104,7 @@ h4 {
 	font-family: 'Bungee Hairline', cursive;
 	letter-spacing: 2px;
 	color: white;
+	text-transform: uppercase;
 }
 
 
@@ -107,10 +112,13 @@ p {
 	background-color: transparent;
 	padding: 10px 0px 5px 10px;
 	font-size: 20px;
-	color: white;
-	font-family: 'Bungee Hairline', cursive;
-	text-decoration: none;
+	color: black;
+	font-family: 'Questrial', sans-serif;
 	letter-spacing: 2px;
+}
+
+p a {
+	text-decoration: none;
 }
 
 img {

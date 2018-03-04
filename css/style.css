@@ -1,5 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Outline|Poppins');
+
 *{
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
-	box-sizing: 0;
+}
+
+#wrapper {
+	width: 100vw;
+	height: 100vh;
+	box-sizing: border-box;
+	background: radial-gradient(circle, #16a085, #f4d03f);
+	padding-top: 15em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#mainContainer {
+	width: 60%;
+	height: 50%;
+	background-color: rgba(237, 237, 237, 0.3);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 80px;
+}
+
+h1 {
+	font-family: 'Bungee Outline', cursive;
+	letter-spacing: 2px;
+	color: white;
+	font-size: 3.8em;
+	padding: 60px 0px 25px 0px;
+}
+
+#subContainer {
+	width: 80%;
+	height: 30%;
+	background-color: rgba(237, 237, 237, 0.3);
+	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	border-radius: 40px;
+}
+
+.container {
+	width: 30%;
+	height: 65%;
+	float: left;
+	background-color: #fe8c00;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	font-size: 25px;
+	letter-spacing: 2px;
 }
