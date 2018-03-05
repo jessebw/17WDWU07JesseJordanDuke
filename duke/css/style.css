@@ -1,4 +1,131 @@
-*{
-	margin: 0;
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline|Questrial|Press+Start+2P');
+
+* {
+	margin: 0 auto;
 	padding: 0;
+}
+
+#wrapper {
+	width: 100vw;
+	height: 100vh;
+	box-sizing: border-box;
+	padding: 2em;
+	background-image: url('../img/background.png');
+}
+
+#head {
+	width: 70%;
+	height: 20%;
+	background-color: black;
+	border-radius: 15px 15px 0px 0px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+#container {
+	width: 70%;
+	height: 70%;
+}
+
+#pokemonListContainer {
+	width: 25%;
+	height: 100%;
+	background-color: #ff4554;
+	float: left;
+	border-radius: 0px 0px 0px 15px;
+}
+
+#list {
+	width: 90%;
+	height: 85%;
+	background-color: rgba(237, 237, 237, 0.3);
+	overflow: scroll;
+	margin: 0 auto;
+	border-radius: 15px;
+}
+
+#listTitle {
+	background-color: transparent;
+	padding: 10px 0px 10px 15px;
+	font-family: 'Questrial', sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+#infoContainer {
+	width: 75%;
+	height: 100%;
+	background-color: #00c3e3;
+	float: left;
+	text-align: center;
+	border-radius: 0px 0px 15px 0px;
+}
+
+#information {
+	margin: 0 auto;
+	width: 96.2%;
+	height: 85%;
+	background-color: rgba(237, 237, 237, 0.3);
+	border-radius: 15px;
+	overflow: scroll;
+}
+
+#infoTitle {
+	background-color: transparent;
+	padding: 10px 0px 10px 0px;
+	font-family: 'Questrial', sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+h1 {
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 2.5em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 3em;
+	background-color: transparent;
+	padding: 8px 0px 5px 0px;
+	font-family: 'Bungee Hairline', cursive;
+	letter-spacing: 4px;
+	color: white;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 2em;
+	background-color: transparent;
+	padding: 8px 0px 8px 0px;
+	font-family: 'Bungee Hairline', cursive;
+	letter-spacing: 2px;
+	color: white;
+	text-transform: uppercase;
+}
+
+
+p {
+	background-color: transparent;
+	padding: 10px 0px 5px 10px;
+	font-size: 20px;
+	color: black;
+	font-family: 'Questrial', sans-serif;
+	letter-spacing: 2px;
+}
+
+p a {
+	text-decoration: none;
+}
+
+img {
+	background-color: transparent;
+	width: 150px;
+	height: 150px;
+	margin: 8px;
+	border: solid 1px white;
+	border-radius: 5px;
 }

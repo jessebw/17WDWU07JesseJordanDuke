@@ -3,8 +3,58 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	
+    <div class="container">
+        <div class="top-bar"></div>
+        <h1>Weather Heat Map</h1>
+
+        <form id="APIForm" method="post">
+            <div class="form-group">
+            </div>
+        </form>
+
+        <div class="container02">
+            <div id="dataContainer"></div>
+        </div>
+
+         <div id="inputs">
+            <div class="loc-auck">
+              <input type="radio" name="type" class="loc-auck" id="changetype-auckland" checked="checked">
+              <label for="changetype-auckland">Auckland</label>
+            </div>
+
+            <div class="loc-welly">
+              <input type="radio" name="type" class="loc-welly" id="changetype-wellington">
+              <label for="changetype-wellington">Wellington</label>
+            </div>
+
+            <div class="loc-chch">
+              <input type="radio" name="type" class="loc-chch" id="changetype-christchurch">
+              <label for="changetype-christchurch">Christchurch</label>
+            </div>
+
+            <div class="loc-ash">
+              <input type="radio" name="type" class="loc-ash" id="changetype-ashburton">
+              <label for="changetype-ashburton">Ashburton</label>
+            </div>
+              
+            <div class="loc-inv">
+              <input type="radio" name="type" class="loc-inv" id="changetype-invercargill">
+              <label for="changetype-invercargill">Invercargill</label>
+            </div>
+        </div>
+        <div id="metservice-widget"></div>
+    </div>
+
+    <div id="map"></div>
+
+  <!-- Google Map API -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBQh2z_23B7NAyo3os1DQy_PPa84-koXU&callback=initMap&libraries=visualization" type="text/javascript"></script>
+  <!-- JQuery -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+	<!-- JS -->
+	<script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>

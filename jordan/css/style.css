@@ -2,3 +2,67 @@
 	margin: 0;
 	padding: 0;
 }
+
+#map {
+	height: 100%;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+    width: 24%;
+    height: 47%;
+    background-color: white;
+    font-family: helvetica;
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    z-index: 30;
+    border-radius: 4px;
+}
+
+#dataContainer {
+	font-size: 10px;
+    padding: 11px 0 10px 24px;
+    margin-top: 4px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    background-color: #2196F3;
+    font-size: 25px;
+    padding: 8px 20px;
+    font-family: helvetica;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.form-control {
+    margin: 5px 0 0 20px;
+    padding: 5px 200px 5px 5px;
+    font-size: 12px;
+}
+
+#inputs {
+    font-size: xx-small;
+    display: flex;
+    margin: 0 0 0 3px;
+    justify-content: space-around;
+    padding: 0 10px 0 7px;
+}
+
+#metservice-widget {
+    width: 100%;
+}
+
+#wx-widget.wx-white {
+    background: #fff;
+    color: #333;
+    width: 100%;
