@@ -1,33 +1,39 @@
-/* iife */
-(function (){ 
 
-// console.log('a');
+console.log('testA');
 
-// function getTwitter(){
-// 	$.ajax({
-// 		url:"js/MOCK_DATA.json",
-// 		dataType:"json",
-// 		success:function(dataFromServer){
-// 			console.log('success');
+function initAutocomplete(){
 
-// 		},
-// 		error:function(errorFromJSON){
-// 			console.log(errorFromJSON);
-// 			alert("Cannot connect to server.");
-// 		}
-// 	})
-// }
+    var input = document.getElementById('formInput');
 
-// getTwitter();
+    var acomplete = new google.maps.places.Autocomplete(input);
 
+    google.maps.event.addListener(acomplete, 'place_changed', function(){
+      
+        var place = acomplete.getPlace();
+        // console.log(place.formatted_address);
+        // console.log(place.url);
+        console.log(place);
 
+        var myLat = place.geometry.location.lat();
+        console.log(myLat);
 
+        var myLong = place.geometry.location.lng();
+        console.log(myLong);
 
+        var uluru = {lat: myLat, lng: myLong};
 
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: uluru
+        });
 
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+ 
+        
+    });
+   
+} /* /initAutocomplete */
 
-
-
-
-
-})(); /* /iife */

@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<meta charset="UTF-8">
-	<title>Jesse's Data</title>
+	<title>Jesses Data</title>
 
-	<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- bootstrap css -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!-- custom css -->
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-<div class="container-fluid">
 
-	<div class="row header">
-		<div class="col logoD"></div>
-		<div class="col"></div>
-	</div>
-	<div class="row pieChart">
-		<div class="col"></div>
-		<div class="col"></div>
-		<div class="col"></div>
-	</div>
-	<div class="row info">
-		<div class="col"></div>
-	</div>
-	<div class="row bottom">
-		<div class="col fbFeed"></div>
-		<div class="col googleMap"></div>
+<div class="grid-container">
+
+	<div id="formContent">
+		<h1>Location:</h1>
+
+		<form id="APIform">
+
+			<input id="formInput" name="ac" type="text" size="40">
+
+		</form>
+
+	<div id="dataContainer">
+		<h1 id="formAnswer"></h1>
+		
 	</div>
 
+	</div>
 
+	<div id="map"></div>
 
-</div>	<!-- /container-fluid -->
-
-<!-- facebook plug in for cival def
-https://www.facebook.com/hbemergency/ -->
-
-
-
-<!-- jquery.js / popper.js / bootstrap.jsCDN -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</div>
 
 
 
-<!-- custom js -->
+	
+
+<!-- jquery CDN -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+<!-- custom script -->
 <script type="text/javascript" src="js/custom.js"></script>
+
+<!-- google places -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyqxMkhc31hKFwW7etsYUkj4PoaO0nSoo&libraries=places&callback=initAutocomplete"></script>
+
+
+
+
+
 </body>
 </html>
