@@ -62,7 +62,7 @@ function initMap(){
 	var nz = new google.maps.LatLng(-41.162459,176.9314557);
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: nz,
-		zoom: 5
+		zoom: 6
 	});
 
 	var heatmap = new google.maps.visualization.HeatmapLayer({
@@ -142,7 +142,7 @@ function initMap(){
 			if (true) {
 				i.setAttribute("src", api + places[i] + type + dataLocation.location.hostname);			
 				map.fitBounds(aucklatlngbounds);
-				map.setZoom(9);
+				map.setZoom(7);
 			};
 		});
 
@@ -150,7 +150,7 @@ function initMap(){
 			if (true) {
 				i.setAttribute("src", api + places[1] + type + dataLocation.location.hostname);
 				map.fitBounds(wgtnlatlngbounds);
-				map.setZoom(9);
+				map.setZoom(8);
 			};
 		})
 
@@ -158,7 +158,7 @@ function initMap(){
 			if (true) {
 				i.setAttribute("src", api + places[2] + type + dataLocation.location.hostname);
 				map.fitBounds(chchlatlngbounds);
-				map.setZoom(9);
+				map.setZoom(7);
 			};
 		})
 
@@ -166,7 +166,7 @@ function initMap(){
 			if (true) {
 				i.setAttribute("src", api + places[3] + type + dataLocation.location.hostname);
 				map.fitBounds(ashblatlngbounds);
-				map.setZoom(9);
+				map.setZoom(8);
 			};
 		})
 
